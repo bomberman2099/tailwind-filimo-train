@@ -14,4 +14,24 @@
     @apply bg-cover bg-center bg-no-repeat absolute top-0 left-0 bottom-0;
     background-image: url("https://static.cdn.asset.filimo.com/ct/ugcmz_mobile_1_v1.jpeg?width=960&quality=85&sharpen=50&secret=XBBiSLh-jy7Y1TbWhtpz-g");
   }
+  .bg-joker-image {
+    @apply bg-cover bg-center bg-no-repeat h-[500px];
+    background-image: url("https://static.cdn.asset.filimo.com/flmt/mov_cvr_filimo_hor_150583_468.jpg?width=1920&quality=80&sharpen=50&secret=57xmjRf3t8rM7DPIEja6Lw");
+  }
+  swiper-container {
+    width: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    object-fit: cover;
+  }
 }
