@@ -87,9 +87,6 @@
         <nav class="hidden lg:!flex gap-5 text-sm">
           <a href="#" class="">فیلیموتور</a>
           <a href="card.html" class="">فیلم</a>
-          <a href="#" class="">سریال</a>
-          <a href="#" class="">ایرانی</a>
-          <a href="#" class="">خارجی</a>
           <a href="#" class="">مجموعه ها</a>
           <a href="#" class="flex">
             <svg
@@ -243,6 +240,7 @@
       <div
         class="bg-filimo-image h-[40rem] w-full text-center flex justify-center lalefont relative min-h-[40rem]"
       >
+        <div class="gra w-full h-full absolute top-0"></div>
         <div class="absolute bottom-2 left-0 right-0 flex flex-col gap-10">
           <p class="text-xl text-yellow-500">با فیلیمو بی وقفه فیلم ببین</p>
           <p class="text-5xl">کنترل همیشه دست توست!</p>
@@ -365,7 +363,17 @@
         </div>
       </div>
       <div class="popular py-32 md:px-32 space-y-6 max-w-[1800px] mx-auto">
-        <p class="lalefont text-2xl px-10">محبوب ترین های فیلیمو</p>
+        <div class="flex">
+          <p class="lalefont text-2xl px-10">محبوب ترین های فیلیمو</p>
+          <div
+            class="border-zinc-700 rounded-3xl w-28 border flex items-center overflow-hidden gap-2"
+          >
+            <a href="#" class="p-1 bg-zinc-700 rounded-3xl font-extrabold"
+              >سریال</a
+            >
+            <a href="#" class="p-1 font-extrabold">فیلم</a>
+          </div>
+        </div>
         <div
           class="flex gap-3 w-full justify-center overflow-x-auto md:overflow-visible"
         >
@@ -413,8 +421,11 @@
           </div>
         </div>
       </div>
-      <div class="bg-joker-image flex-col p-11">
-        <div class="flex justify-between items-center max-w-[1300px] mx-auto">
+      <div class="bg-joker-image flex-col relative">
+        <div class="gra2 w-full h-full absolute top-0"></div>
+        <div
+          class="flex justify-between items-center max-w-[1300px] mx-auto p-11"
+        >
           <div class="flex flex-col gap-8">
             <p class="font-bold">جوکر2</p>
             <p class="text-sm text-gray-700">کارگردان: احسان علیخانی</p>
@@ -439,8 +450,8 @@
           class="mySwiper max-w-[1300px] py-4 my-6"
           pagination="true"
           pagination-clickable="true"
-          space-between="10"
-          slides-per-view="5"
+          space-between="0"
+          slides-per-view="3"
           navigation="true"
         >
           <swiper-slide
@@ -493,10 +504,16 @@
       <div
         class="flex justify-center items-center max-w-[1900px] mx-auto my-28 gap-9 p-6 flex-col md:flex-row"
       >
-        <div>
+        <div class="hidden md:!block">
           <img
             src="https://www.filimo.com/assets/web/ui/img-m2PeuwbNt9R1PhZBO5tb5w/campaigns/nosub-v_new/deviceYaghi.png"
             alt=""
+          />
+        </div>
+        <div class="block md:hidden">
+          <img
+            src="https://www.filimo.com/assets/web/ui/img-RCT92VW5oCpqc83wkhSTgg/campaigns/nosub-v_new/device2.png"
+            alt="عکس در سایز کوچکتر"
           />
         </div>
         <div class="flex flex-col gap-8">
@@ -559,7 +576,7 @@
           pagination="true"
           pagination-clickable="true"
           space-between="30"
-          slides-per-view="6"
+          slides-per-view="auto"
           navigation="true"
         >
           <swiper-slide class="w-[170px]"
