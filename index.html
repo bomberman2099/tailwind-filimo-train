@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body class="bg-black text-white">
-    <header class="w-full bg-gray-950">
+    <header class="w-full bg-gray-950 sticky top-0 z-50">
       <div
         class="container mx-auto flex justify-between items-center px-4 md:px-8 lg:px-12 p-2"
       >
@@ -193,7 +193,7 @@
               ></path>
             </g>
           </svg>
-          <button class="bg-green-500 px-4 py-2 rounded flex gap-1">
+          <button class="bg-green-500 px-0 md:px-4 py-2 rounded flex gap-1">
             <svg
               xmlns:xlink="http://www.w3.org/1999/xlink"
               xmlns="http://www.w3.org/2000/svg"
@@ -237,131 +237,525 @@
       </div>
     </header>
     <main>
-      <div
-        class="bg-filimo-image h-[40rem] w-full text-center flex justify-center lalefont relative min-h-[40rem]"
+      <swiper-container
+        class="mySwiper"
+        navigation="true"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false"
+        loop="true"
       >
-        <div class="gra w-full h-full absolute top-0"></div>
-        <div class="absolute bottom-2 left-0 right-0 flex flex-col gap-10">
-          <p class="text-xl text-yellow-500">با فیلیمو بی وقفه فیلم ببین</p>
-          <p class="text-5xl">کنترل همیشه دست توست!</p>
-          <div class="flex gap-7 justify-center flex-col md:flex-row">
-            <div class="flex justify-center">
-              <svg
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                class="rounded-full bg-green-950 fill-current text-green-700"
-              >
-                <defs>
-                  <g id="ui-icon-check" viewBox="0 0 24 24">
-                    <path
-                      d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
-                    ></path>
-                  </g>
-                </defs>
-                <g>
-                  <path
-                    d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
-                  ></path>
-                </g>
-              </svg>
-              <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+        <swiper-slide
+          ><div
+            class="bg-filimo-image h-[40rem] w-full text-center flex justify-center lalefont relative min-h-[40rem]"
+          >
+            <div class="gra w-full h-full absolute top-0"></div>
+            <div class="absolute bottom-2 left-0 right-0 flex flex-col gap-10">
+              <p class="text-xl text-yellow-500">با فیلیمو بی وقفه فیلم ببین</p>
+              <p class="text-5xl">کنترل همیشه دست توست!</p>
+              <div class="flex gap-7 justify-center flex-col md:flex-row">
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center pt-7 pb-9">
+                <button
+                  class="bg-green-500 py-4 p-16 flex justify-center gap-1 rounded-lg text-xl"
+                >
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-gtm-vis-has-fired2323515_2471="1"
+                    width="24"
+                    height="24"
+                    class="fill-current"
+                  >
+                    <defs>
+                      <g id="ui-icon-subscription" viewBox="0 0 24 24">
+                        <path
+                          d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                        ></path>
+                        <path
+                          d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                        ></path>
+                        <circle cx="16" cy="9" r="1"></circle>
+                        <circle cx="16" cy="15" r="1"></circle>
+                        <circle cx="16" cy="12" r="1"></circle>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                      ></path>
+                      <path
+                        d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                      ></path>
+                      <circle cx="16" cy="9" r="1"></circle>
+                      <circle cx="16" cy="15" r="1"></circle>
+                      <circle cx="16" cy="12" r="1"></circle>
+                    </g>
+                  </svg>
+                  <p>خرید اشتراک و تماشا</p>
+                </button>
+                <p class="text-zinc-400">تخفیف ویژه برای کاربران جدید</p>
+              </div>
             </div>
-            <div class="flex justify-center">
-              <svg
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                class="rounded-full bg-green-950 fill-current text-green-700"
-              >
-                <defs>
-                  <g id="ui-icon-check" viewBox="0 0 24 24">
-                    <path
-                      d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
-                    ></path>
-                  </g>
-                </defs>
-                <g>
-                  <path
-                    d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
-                  ></path>
-                </g>
-              </svg>
-              <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+          </div></swiper-slide
+        >
+        <swiper-slide
+          ><div
+            class="bg-filimo-image h-[40rem] w-full text-center flex justify-center lalefont relative min-h-[40rem]"
+          >
+            <div class="gra w-full h-full absolute top-0"></div>
+            <div class="absolute bottom-2 left-0 right-0 flex flex-col gap-10">
+              <p class="text-xl text-yellow-500">با فیلیمو بی وقفه فیلم ببین</p>
+              <p class="text-5xl">کنترل همیشه دست توست!</p>
+              <div class="flex gap-7 justify-center flex-col md:flex-row">
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center pt-7 pb-9">
+                <button
+                  class="bg-green-500 py-4 p-16 flex justify-center gap-1 rounded-lg text-xl"
+                >
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-gtm-vis-has-fired2323515_2471="1"
+                    width="24"
+                    height="24"
+                    class="fill-current"
+                  >
+                    <defs>
+                      <g id="ui-icon-subscription" viewBox="0 0 24 24">
+                        <path
+                          d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                        ></path>
+                        <path
+                          d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                        ></path>
+                        <circle cx="16" cy="9" r="1"></circle>
+                        <circle cx="16" cy="15" r="1"></circle>
+                        <circle cx="16" cy="12" r="1"></circle>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                      ></path>
+                      <path
+                        d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                      ></path>
+                      <circle cx="16" cy="9" r="1"></circle>
+                      <circle cx="16" cy="15" r="1"></circle>
+                      <circle cx="16" cy="12" r="1"></circle>
+                    </g>
+                  </svg>
+                  <p>خرید اشتراک و تماشا</p>
+                </button>
+                <p class="text-zinc-400">تخفیف ویژه برای کاربران جدید</p>
+              </div>
             </div>
-            <div class="flex justify-center">
-              <svg
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                class="rounded-full bg-green-950 fill-current text-green-700"
-              >
-                <defs>
-                  <g id="ui-icon-check" viewBox="0 0 24 24">
-                    <path
-                      d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
-                    ></path>
-                  </g>
-                </defs>
-                <g>
-                  <path
-                    d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
-                  ></path>
-                </g>
-              </svg>
-              <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+          </div></swiper-slide
+        >
+        <swiper-slide
+          ><div
+            class="bg-filimo-image h-[40rem] w-full text-center flex justify-center lalefont relative min-h-[40rem]"
+          >
+            <div class="gra w-full h-full absolute top-0"></div>
+            <div class="absolute bottom-2 left-0 right-0 flex flex-col gap-10">
+              <p class="text-xl text-yellow-500">با فیلیمو بی وقفه فیلم ببین</p>
+              <p class="text-5xl">کنترل همیشه دست توست!</p>
+              <div class="flex gap-7 justify-center flex-col md:flex-row">
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center pt-7 pb-9">
+                <button
+                  class="bg-green-500 py-4 p-16 flex justify-center gap-1 rounded-lg text-xl"
+                >
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-gtm-vis-has-fired2323515_2471="1"
+                    width="24"
+                    height="24"
+                    class="fill-current"
+                  >
+                    <defs>
+                      <g id="ui-icon-subscription" viewBox="0 0 24 24">
+                        <path
+                          d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                        ></path>
+                        <path
+                          d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                        ></path>
+                        <circle cx="16" cy="9" r="1"></circle>
+                        <circle cx="16" cy="15" r="1"></circle>
+                        <circle cx="16" cy="12" r="1"></circle>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                      ></path>
+                      <path
+                        d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                      ></path>
+                      <circle cx="16" cy="9" r="1"></circle>
+                      <circle cx="16" cy="15" r="1"></circle>
+                      <circle cx="16" cy="12" r="1"></circle>
+                    </g>
+                  </svg>
+                  <p>خرید اشتراک و تماشا</p>
+                </button>
+                <p class="text-zinc-400">تخفیف ویژه برای کاربران جدید</p>
+              </div>
             </div>
-          </div>
-          <div class="flex flex-col items-center pt-7 pb-9">
-            <button
-              class="bg-green-500 py-4 p-16 flex justify-center gap-1 rounded-lg text-xl"
-            >
-              <svg
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                data-gtm-vis-has-fired2323515_2471="1"
-                width="24"
-                height="24"
-                class="fill-current"
-              >
-                <defs>
-                  <g id="ui-icon-subscription" viewBox="0 0 24 24">
-                    <path
-                      d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
-                    ></path>
-                    <path
-                      d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
-                    ></path>
-                    <circle cx="16" cy="9" r="1"></circle>
-                    <circle cx="16" cy="15" r="1"></circle>
-                    <circle cx="16" cy="12" r="1"></circle>
-                  </g>
-                </defs>
-                <g>
-                  <path
-                    d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
-                  ></path>
-                  <path
-                    d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
-                  ></path>
-                  <circle cx="16" cy="9" r="1"></circle>
-                  <circle cx="16" cy="15" r="1"></circle>
-                  <circle cx="16" cy="12" r="1"></circle>
-                </g>
-              </svg>
-              <p>خرید اشتراک و تماشا</p>
-            </button>
-            <p class="text-zinc-400">تخفیف ویژه برای کاربران جدید</p>
-          </div>
-        </div>
-      </div>
+          </div></swiper-slide
+        >
+        <swiper-slide
+          ><div
+            class="bg-filimo-image h-[40rem] w-full text-center flex justify-center lalefont relative min-h-[40rem]"
+          >
+            <div class="gra w-full h-full absolute top-0"></div>
+            <div class="absolute bottom-2 left-0 right-0 flex flex-col gap-10">
+              <p class="text-xl text-yellow-500">با فیلیمو بی وقفه فیلم ببین</p>
+              <p class="text-5xl">کنترل همیشه دست توست!</p>
+              <div class="flex gap-7 justify-center flex-col md:flex-row">
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+                <div class="flex justify-center">
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    class="rounded-full bg-green-950 fill-current text-green-700"
+                  >
+                    <defs>
+                      <g id="ui-icon-check" viewBox="0 0 24 24">
+                        <path
+                          d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                        ></path>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>95 هزاراپیزود فیلمو سریال برای تماشا داری</p>
+                </div>
+              </div>
+              <div class="flex flex-col items-center pt-7 pb-9">
+                <button
+                  class="bg-green-500 py-4 p-16 flex justify-center gap-1 rounded-lg text-xl"
+                >
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-gtm-vis-has-fired2323515_2471="1"
+                    width="24"
+                    height="24"
+                    class="fill-current"
+                  >
+                    <defs>
+                      <g id="ui-icon-subscription" viewBox="0 0 24 24">
+                        <path
+                          d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                        ></path>
+                        <path
+                          d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                        ></path>
+                        <circle cx="16" cy="9" r="1"></circle>
+                        <circle cx="16" cy="15" r="1"></circle>
+                        <circle cx="16" cy="12" r="1"></circle>
+                      </g>
+                    </defs>
+                    <g>
+                      <path
+                        d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"
+                      ></path>
+                      <path
+                        d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"
+                      ></path>
+                      <circle cx="16" cy="9" r="1"></circle>
+                      <circle cx="16" cy="15" r="1"></circle>
+                      <circle cx="16" cy="12" r="1"></circle>
+                    </g>
+                  </svg>
+                  <p>خرید اشتراک و تماشا</p>
+                </button>
+                <p class="text-zinc-400">تخفیف ویژه برای کاربران جدید</p>
+              </div>
+            </div>
+          </div></swiper-slide
+        >
+      </swiper-container>
+
       <div class="popular py-32 md:px-32 space-y-6 max-w-[1800px] mx-auto">
         <div class="flex">
           <p class="lalefont text-2xl px-10">محبوب ترین های فیلیمو</p>
@@ -377,48 +771,49 @@
         <div
           class="flex gap-3 w-full justify-center overflow-x-auto md:overflow-visible"
         >
-          <div class="w-full max-w-[190px] min-w-[115px]">
-            <img
-              class="rounded-xl border"
-              src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
-              alt=""
-            />
-          </div>
-          <div class="w-full max-w-[190px] min-w-[115px]">
-            <img
-              class="rounded-xl border"
-              src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
-              alt=""
-            />
-          </div>
-          <div class="w-full max-w-[190px] min-w-[115px]">
-            <img
-              class="rounded-xl border"
-              src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
-              alt=""
-            />
-          </div>
-          <div class="w-full max-w-[190px] min-w-[115px]">
-            <img
-              class="rounded-xl border"
-              src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
-              alt=""
-            />
-          </div>
-          <div class="w-full max-w-[190px] min-w-[115px]">
-            <img
-              class="rounded-xl border"
-              src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
-              alt=""
-            />
-          </div>
-          <div class="w-full max-w-[190px] min-w-[115px]">
-            <img
-              class="rounded-xl border"
-              src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
-              alt=""
-            />
-          </div>
+        <div class="w-full max-w-[190px] min-w-[115px]">
+          <img
+            class="rounded-xl border border-transparent hover:border-white opacity-100 hover:opacity-90 transition-opacity duration-300 transform hover:scale-105"
+            src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
+            alt=""
+          />
+        </div>
+        
+        <div class="w-full max-w-[190px] min-w-[115px]">
+          <img
+            class="rounded-xl border border-transparent hover:border-white opacity-100 hover:opacity-90 transition-opacity duration-300 transform hover:scale-105"
+            src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
+            alt=""
+          />
+        </div>
+        <div class="w-full max-w-[190px] min-w-[115px]">
+          <img
+            class="rounded-xl border border-transparent hover:border-white opacity-100 hover:opacity-90 transition-opacity duration-300 transform hover:scale-105"
+            src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
+            alt=""
+          />
+        </div>
+        <div class="w-full max-w-[190px] min-w-[115px]">
+          <img
+            class="rounded-xl border border-transparent hover:border-white opacity-100 hover:opacity-90 transition-opacity duration-300 transform hover:scale-105"
+            src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
+            alt=""
+          />
+        </div>
+        <div class="w-full max-w-[190px] min-w-[115px]">
+          <img
+            class="rounded-xl border border-transparent hover:border-white opacity-100 hover:opacity-90 transition-opacity duration-300 transform hover:scale-105"
+            src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
+            alt=""
+          />
+        </div>
+        <div class="w-full max-w-[190px] min-w-[115px]">
+          <img
+            class="rounded-xl border border-transparent hover:border-white opacity-100 hover:opacity-90 transition-opacity duration-300 transform hover:scale-105"
+            src="https://static.cdn.asset.filimo.com/flmt/mov_150445_188656-b.jpg?width=165&quality=85&sharpen=80&secret=bpT2UxYKKwsJO15n8XO0TA"
+            alt=""
+          />
+        </div>
         </div>
       </div>
       <div class="bg-joker-image flex-col relative">
@@ -506,13 +901,13 @@
       >
         <div class="hidden md:!block">
           <img
-            src="https://www.filimo.com/assets/web/ui/img-m2PeuwbNt9R1PhZBO5tb5w/campaigns/nosub-v_new/deviceYaghi.png"
+            src="https://www.filimo.com/assets/web/ui/img-KkMyloVxESxWfRCojDxkA/campaigns/nosub-v_new/deviceYaghi.png"
             alt=""
           />
         </div>
         <div class="block md:hidden">
           <img
-            src="https://www.filimo.com/assets/web/ui/img-RCT92VW5oCpqc83wkhSTgg/campaigns/nosub-v_new/device2.png"
+            src="https://www.filimo.com/assets/web/ui/img-KkMyloVxESxWfRCojDxkA/campaigns/nosub-v_new/device2.png"
             alt="عکس در سایز کوچکتر"
           />
         </div>
@@ -543,10 +938,7 @@
         class="flex justify-center items-center max-w-[1100px] mx-auto flex-col-reverse md:flex-row px-5 py-3"
       >
         <div>
-          <img
-            src="https://www.filimo.com/assets/web/ui/img-m2PeuwbNt9R1PhZBO5tb5w/campaigns/nosub-v_new/bg-kids.png"
-            alt=""
-          />
+          <img src="./images/bg-kids.webp" alt="" />
         </div>
         <div class="flex flex-col gap-8">
           <p>دنیایی متفاوت از فیلم و کارتون های کودکانه</p>
