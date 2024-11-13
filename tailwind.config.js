@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {},
   },
+  base: '/tailwind-filimo-train/',
   plugins: [],
 }
 
